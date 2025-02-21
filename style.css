@@ -1,0 +1,398 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color:#c7f9cc;
+    color: #333333;
+    line-height: 1.6;
+}
+
+
+header {
+    background-color: #2980b9;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    
+}
+header .fl{
+    margin-left: 40px;
+ 
+}
+
+header .logo {
+    font-size: 1.8rem;
+    color: #ecf0f1;
+    font-weight: bold;
+}
+  header .logoo{
+    font-size: 4.3rem;
+    color: #0d0202;
+    text-align: center;
+    font-weight: bold;
+    margin-right: 150px;
+    padding-top: 100px;
+    text-shadow: 10px 10px 10px rgba(20, 25, 25,0.5); 
+ } 
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-right: 40px;
+}
+
+header nav ul li a {
+    color: #1ab9e1;
+    text-decoration: none;
+    font-size: 2rem;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #0b0000fa;
+    background-color:#ffffff;
+    border-radius:0 20% 0 20%;
+    
+}
+.main1{
+    display: flex;
+}
+    
+#main {
+    height: 50px;
+    color: #000000;
+    animation: fadeIn 2s ease-in-out; 
+    display: flex;   
+}
+.my{
+    
+    margin-left: 100px;
+    padding-left:100px ;
+}
+
+#main h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    margin-left: 200px;
+}
+
+.hello h2{
+   margin-left: 200px;
+   text-align: left;
+  color: deeppink;
+  font-size: 2rem;
+  margin-top: 100px;
+
+
+}
+p{
+    margin-left: 200px;
+    font-size: 1.5rem;
+}
+.button{
+    
+    background-color: #3498db;
+    color: white;
+    width: 300px;
+    height: 100px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50% 0 50% 0;
+    font-size: 1.40rem;
+    cursor: pointer;
+    transition: background-color 1s ease;
+    margin-left: 300px;
+    margin-top: 50px;
+}
+.button:hover{
+    background-color:deeppink;
+    border-radius: 50% 0  50% 0;
+    box-shadow: 10px 10px 10px rgba(122,130,110, 0.5);
+    transform: scale(1.05);
+    transition: transform 0.8s ease-in-out;
+}
+
+#about {
+    padding: 50px 20px;
+    background:cover ;
+  
+} 
+
+#about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ee0b0b;
+    text-align: center;
+    animation: slideUp 1.5s ease-out;
+} 
+#about ul li{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#services {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #c7f9cc;
+
+}
+
+#services h2 {
+    font-size: 4rem;
+    text-shadow: 10px 10px 10px rgba(20, 25, 25,0.5);     
+    margin-bottom: 40px;
+    color: #000;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #c7f9cc;
+}
+
+.service-card {
+    background-color: #2980b9;
+    color: #000;
+    padding: 20px;
+    margin: 20px;
+    width: 380px;
+    height: 380px;
+    border-radius: 20px;
+    box-shadow: 20px 20px 20px rgba(2, 3, 5, 0.5);
+    transition: transform 0.5s ease-in-out;
+}
+
+.service-card:hover {
+    transform: scale(1.5);
+    transition: transform 0.8s ease-in-out;
+}
+
+.service-card h3 {
+    font-size: 2.0rem;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    text-shadow: 10px 10px 10px rgba(20, 25, 25,0.5); 
+}
+
+.service-card p {
+color: #000000;
+
+margin: 30px 0 0 0;
+font-size: 2rem;
+    
+}
+
+#services {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #c7f9cc;
+
+}
+
+.service-card h3 {
+    font-size: 2.0rem;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.service-card p {
+color: #000000;
+margin-top: 20px; 
+margin: 5px ;
+font-size: 1.30rem;
+
+  
+}
+
+.body{
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #c7f9cc;
+
+}
+
+
+.container {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    width: 400px;
+    height: 450px;
+    perspective: 1000px;
+    margin: 100px;
+}
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+
+.card-front,
+.card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+    border-radius: 20px;
+}
+
+.card-front {
+    background-color: #2980b9;
+    
+}
+
+.card-front h2 {
+    color: #000;
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: 10px 10px 10px rgba(20, 25, 25,0.5);     
+}
+
+.card-back {
+    background-color:#f0f0f0;
+    transform: rotateY(180deg);
+}
+.card-back h2{
+    font-size: 1.10rem;
+    color: black;
+    margin: 15px;
+    padding: 20px;
+}
+.body h1{
+    text-align: center;
+    margin-top: 0px;
+    font-size: 4rem;
+    text-shadow: 10px 10px 10px rgba(20, 25, 25,0.5);     
+    /* color:  deeppink; */
+    
+}
+span{
+    color:deeppink ;
+}
+  
+
+#contact {
+    padding: 50px 20px;
+    text-align: center;
+    
+
+}
+
+#contact form {
+    max-width: 800px;
+    height: 400px;
+    margin-left: 500px;
+    text-align: center;
+    
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 20px;
+    border: none;
+    font-size: 1.5rem;
+    box-shadow: 10px 10px 10px rgba(2, 3, 5,0.3); 
+    color: rgb(0, 0, 2);
+}
+
+
+#contact button {
+    background-color: #1a9cdd;
+    color: #ecf0f1;
+    padding: 10px 20px;
+    border: none;
+    align-items: center;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#contact input:hover{
+    transform: scale(1.05);
+    transition: transform 0.6s ease-in-out;
+    box-shadow: 10px 10px 10px rgba(2, 3, 5,0.3);
+    background-color: deeppink;
+}
+
+#contact textarea:hover{
+    transform: scale(1.05);
+    transition: transform 0.6s ease-in-out;
+    box-shadow: 10px 10px 10px rgba(2, 3, 5,0.3);
+    background-color: deeppink;
+}
+
+
+#contact button:hover {
+    background-color:deeppink;
+    border-radius: 30px;
+    box-shadow: 10px 10px 10px rgba(122,130,110, 0.5);
+    transform: calc(1.06);
+     transition:  0.6s ease-in-out;
+  
+}
+   h2 span{
+    color: deeppink;
+    font-size: 2rem;
+    text-shadow: 10px 10px 10px rgba(20, 25, 25,0.5);     
+   }
+#contact h2 {
+    font-size: 4rem;
+    text-shadow: 10px 10px 10px rgba(20, 25, 25,0.5);     
+
+}
+
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 0px;
+}
+.insta a{    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+   
+    
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes slideUp {
+    0% { transform: translateY(20px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
